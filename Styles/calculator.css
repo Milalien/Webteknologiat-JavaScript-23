@@ -10,10 +10,11 @@ h1 {
 }
 
 .col {
-    width: 150px;
+    width: 100px;
 }
 
 .row {
+    width: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -29,7 +30,6 @@ h1 {
 }
 
 .form-select {
-    align-items: center;
     width: 70px;
 }
 

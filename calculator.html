@@ -36,22 +36,22 @@
 
     <h1>Yksinkertainen laskin</h1>
     <div class="container">
-
         <div class="row">
             <div class="col">
-                <button class="btn btn-dark" onclick="AddToNum1()">+</button>
+                <button class="btn btn-dark" onclick="SubtractFromNum1()">-</button>
             </div>
             <div class="col">
                 <input type="text" class="form-control" id="luku1" placeholder="luku 1">
             </div>
             <div class="col">
-                <button class="btn btn-dark" onclick="SubtractFromNum1()">-</button>
+                <button class="btn btn-dark" onclick="AddToNum1()">+</button>
             </div>
         </div>
+
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                <select class="form-select" aria-label="operaattori">
+                <select class="form-select" aria-label="operaattori" id="select">
                     <option selected></option>
                     <option value="1">+</option>
                     <option value="2">-</option>
@@ -59,27 +59,34 @@
                     <option value="4">*</option>
                 </select>
             </div>
-        </div>
-
-        <div class="mb-3">
 
         </div>
-        <div class="mb-3">
-            <button class="btn btn-dark" onclick="AddToNum2()">+</button>
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-dark" onclick="SubtractFromNum2()">-</button>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="luku2" placeholder="luku 2">
+            </div>
+            <div class="col">
+                <button class="btn btn-dark" onclick="AddToNum2()">+</button>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="luku2" class="form-label">Luku 2</label>
-            <input type="text" class="form-control" id="luku2" placeholder="luku 2">
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <button class="btn btn-dark" onclick="Calculate()">Laske</button>
+            </div>
         </div>
-        <div class="mb-3">
-            <button class="btn btn-dark" onclick="SubtractFromNum2()">-</button>
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-dark" onclick="Calculate()">Laske</button>
-        </div>
-        <div class="mb-3">
-            <label for="tulos" class="form-label">Tulos</label>
-            <input type="text" class="form-control" id="tulos" placeholder="Tulos">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <label for="tulos" class="form-label">Tulos</label>
+                <input type="text" class="form-control" id="tulos" placeholder="Tulos">
+            </div>
+
         </div>
 
     </div>
