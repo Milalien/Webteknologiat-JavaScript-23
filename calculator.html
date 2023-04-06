@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Webteknologiat - Laskin</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="Styles/calculator.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Webteknologiat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Tehtävä 1</a>
+                    <a class="nav-link" href="map.html">Kartta</a>
+                    <a class="nav-link active" aria-current="page" href="calculator.html">Laskin</a>
+                    <a class="nav-link" href="carousel.html">Kuvakaruselli</a>
+                    <a class="nav-link" href="#">Lista-ruudukkonäkymä</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Yksinkertainen laskin</h1>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-dark" onclick="AddToNum1()">+</button>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="luku1" placeholder="luku 1">
+            </div>
+            <div class="col">
+                <button class="btn btn-dark" onclick="SubtractFromNum1()">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <select class="form-select" aria-label="operaattori">
+                    <option selected></option>
+                    <option value="1">+</option>
+                    <option value="2">-</option>
+                    <option value="3">/</option>
+                    <option value="4">*</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mb-3">
+
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-dark" onclick="AddToNum2()">+</button>
+        </div>
+        <div class="mb-3">
+            <label for="luku2" class="form-label">Luku 2</label>
+            <input type="text" class="form-control" id="luku2" placeholder="luku 2">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-dark" onclick="SubtractFromNum2()">-</button>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-dark" onclick="Calculate()">Laske</button>
+        </div>
+        <div class="mb-3">
+            <label for="tulos" class="form-label">Tulos</label>
+            <input type="text" class="form-control" id="tulos" placeholder="Tulos">
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="Scripts/calculator.js"></script>
+</body>
+
+</html>

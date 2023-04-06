@@ -9,29 +9,30 @@ h1 {
     font-size: 35px;
 }
 
-.mb-3 {
-    width: 300px;
-    padding: 10px;
+.col {
+    width: 150px;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
     width: fit-content;
 }
 
-button {
-    margin-left: 100px;
+.form-select {
+    align-items: center;
+    width: 70px;
 }
 
-iframe {
-    border: 5px solid black;
-    border-style: ridge;
-    width: 100%;
-    height: 300px;
-
+button {
+    width: 70px;
 }
