@@ -11,16 +11,44 @@ window.onload = function () {
     luku1 = document.getElementById('luku1').value1;
     luku2 = document.getElementById('luku2').value2;
 }
+let num;
+let option;
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+function AddToNum1() {
+    document.getElementById('luku1').value = parseInt(document.getElementById('luku1').value) + 1;
+}
+function AddToNum2() {
+    document.getElementById('luku2').value = parseInt(document.getElementById('luku2').value) + 1;
+}
+function SubtractFromNum1() {
+    document.getElementById('luku1').value = parseInt(document.getElementById('luku1').value) - 1;
+}
+function SubtractFromNum2() {
+    document.getElementById('luku2').value = parseInt(document.getElementById('luku2').value) - 1;
+}
 
 function Calculate() {
     luku1 = document.getElementById('luku1').value;
     let num1 = parseInt(luku1);
     luku2 = document.getElementById('luku2').value;
     let num2 = parseInt(luku2);
-    let num = num1 + num2;
-    document.getElementById('tulos').value = num.toString();
-}
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+    option = document.getElementById("select").value;
+    if (option == 1) {
+        num = num1 + num2;
+    } else if (option == 2) {
+        num = num1 - num2;
+    } else if (option == 3) {
+        num = num1 / num2;
+    } else if (option == 4) {
+        num = num1 * num2;
+    } else {
+        return "error";
+    }
+
+    document.getElementById('tulos').value = num.toString();
 }
