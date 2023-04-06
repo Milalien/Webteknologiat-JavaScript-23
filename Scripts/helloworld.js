@@ -2,8 +2,8 @@ window.onload = function () {
     console.log("Näkyykö konsolissa?");
 }
 function sayHelloTo(name) {
-    alert("Hey " + name + "!");
-    console.log("sayHello-functio completed");
+    alert("Hei " + name + "!");
+    console.log("sayHello-functio suoritettu");
 }
 
-document.getElementById('hello-div').innerHTML = "Welcome";
+document.getElementById('hello-div').innerHTML = "Tervetuloa";

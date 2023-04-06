@@ -38,19 +38,17 @@
 
     <h1>Sijainti kartalla</h1>
     <div class="container">
-        <form>
-            <div class="mb-3">
-                <label for="osoite" class="form-label">Katuosoite</label>
-                <input type="text" class="form-control" id="osoite" placeholder="Kirjoita katuosoite">
-            </div>
-            <div class="mb-3">
-                <label for="kaupunki" class="form-label">Kaupunki</label>
-                <input type="text" class="form-control" id="kaupunki" placeholder="Kirjoita kaupungin nimi">
-            </div>
-            <div class="mb-3">
-                <button class="btn btn-dark" onclick="haku()">Hae</button>
-            </div>
-        </form>
+        <div class="mb-3">
+            <label for="osoite" class="form-label">Katuosoite</label>
+            <input type="text" class="form-control" id="osoite" placeholder="Kirjoita katuosoite">
+        </div>
+        <div class="mb-3">
+            <label for="kaupunki" class="form-label">Kaupunki</label>
+            <input type="text" class="form-control" id="kaupunki" placeholder="Kirjoita kaupungin nimi">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-dark" onclick="haku()">Hae</button>
+        </div>
     </div>
 
     <iframe id="maps" title="Kartta" src="https://www.google.com/maps?q=Yliopistonkatu36Lappeenranta&output=embed">
