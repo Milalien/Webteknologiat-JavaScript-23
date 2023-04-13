@@ -8,6 +8,9 @@ let pics_array =
 let index = 0;
 let interval;
 
+//localStorage.setItem('myPic', pics_array[index]);
+//const picc = localStorage.getItem('myPic');
+
 window.onload = function () {
     document.getElementById("pic").src = pics_array[index].src;
 }
@@ -44,3 +47,4 @@ function Play() {
 function Stop() {
     window.clearInterval(interval);
 }
+

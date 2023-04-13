@@ -47,8 +47,7 @@ function Calculate() {
     } else if (option == 4) {
         num = num1 * num2;
     } else {
-        return "error";
+        return console.log("error: check operator");
     }
-
     document.getElementById('tulos').value = num.toString();
 }
