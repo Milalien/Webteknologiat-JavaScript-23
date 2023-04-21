@@ -8,19 +8,19 @@ let pics_array =
 let index = 0;
 let interval;
 
-//localStorage.setItem('myPic', pics_array[index]);
-//const picc = localStorage.getItem('myPic');
-
 window.onload = function () {
+    if (localStorage.hasOwnProperty('myPic')) { index = localStorage.getItem('myPic'); }
     document.getElementById("pic").src = pics_array[index].src;
+    document.getElementById("p").textContent = pics_array[index].name;
 }
 
 function Previous() {
     if (index == 0) {
         index = pics_array.length - 1;
     } else {
-        index -= 1;
+        index--;
     }
+    localStorage.setItem('myPic', index);
 
     document.getElementById("pic").src = pics_array[index].src;
     document.getElementById("p").textContent = pics_array[index].name;
@@ -29,8 +29,10 @@ function Next() {
     if (index == pics_array.length - 1) {
         index = 0;
     } else {
-        index += 1;
+        index++;
     }
+    localStorage.setItem('myPic', index);
+
 
     document.getElementById("pic").src = pics_array[index].src;
     document.getElementById("p").textContent = pics_array[index].name;
@@ -42,9 +44,9 @@ function Play() {
     if (interval == null) {
         interval = window.setInterval(Next, 2000);
     }
-
 }
 function Stop() {
     window.clearInterval(interval);
+    interval = null;
 }
 

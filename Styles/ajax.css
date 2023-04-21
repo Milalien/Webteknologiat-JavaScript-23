@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(205, 205, 205);
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.accordion-item {
+    width: 50%;
+    margin: auto;
+}
+
+.accordion {
+    margin-top: 1%;
+}
