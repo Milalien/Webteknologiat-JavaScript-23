@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+
+body {
+    background-color: rgb(186, 186, 186);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    border: 1%px;
+    border-style: ridge;
+    border-color: black;
+}
