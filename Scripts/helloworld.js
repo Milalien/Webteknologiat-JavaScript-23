@@ -6,4 +6,4 @@ function sayHelloTo(name) {
     console.log("sayHello-functio suoritettu");
 }
 
-document.getElementById('hello-div').innerHTML = "Tervetuloa";
+document.getElementById('hello-div').innerHTML = "Paina nappia saadaksesi pop-up viesti";

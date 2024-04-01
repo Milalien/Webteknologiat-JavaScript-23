@@ -1,8 +1,8 @@
 let pics_array =
     [
-        { "name": "Cherry tree", "src": "Images/cherry.jpg" },
-        { "name": "Forest", "src": "Images/forest.jpg" },
-        { "name": "Tree", "src": "Images/tree.jpg" }
+        { "name": "Kirsikkapuu", "src": "Images/cherry.jpg" },
+        { "name": "Metsä", "src": "Images/forest.jpg" },
+        { "name": "Puu", "src": "Images/tree.jpg" }
     ];
 
 let index = 0;

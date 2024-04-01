@@ -1,6 +1,6 @@
 # Webteknologiat-kurssin lopputehtävä
  
-Yksinkertainen sivu, jonka välilehdiltä löytyy Webteknologiat-kurssin harjoituksia, joissa opeteltiin JavaScriptin hyödyntämistä verkkosivujen tekemisessä.
+Tämä on ensimmäisen Webteknologia-kurssini kurssitehtävä, jossa oppimistavoitteena oli opetella perusteet HTML, JavaScript ja CSS käytöstä toistensa kanssa. Tässä keskityttiin JavaScriptin opettelemiseen.
 
 ### Tehtävä 1
 

@@ -8,9 +8,13 @@ h1 {
     font-size: 35px;
 }
 
+p {
+    text-align: center;
+}
+
 .div-item {
     border: 3px;
-    border-style: dotted;
+    border-style: double;
     width: fit-content;
     height: fit-content;
     margin: 1px;
@@ -20,22 +24,23 @@ h1 {
     display: grid;
     grid-area: auto;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 5%;
 }
 
 .list-view {
+    width: fit-content;
     display: block;
-    margin-top: 5%;
-    margin-left: 40%;
-    justify-content: space-around;
+    margin: 5% auto auto auto;
+    justify-content: center;
 }
 
 .body-div {
-    margin-left: 25%;
-    margin-right: 25%;
+    width: fit-content;
+    margin: auto;
 }
 
 .btn-div {
-    margin-left: 45%;
+    width: fit-content;
+    margin: auto;
 }
